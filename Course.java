@@ -1,18 +1,13 @@
 public class Course {
     String code;
-    String course_name;
+    String courseName;
 
-    public Course(String code, String course_name) {
+    public Course(String code, String courseName) {
         this.code = code;
-        this.course_name = course_name;
+        this.courseName = courseName;
     }
 
-    public String update(String name) {
-        return name;
-    }
+    public void update(String code, String courseName) {
 
-    public String getName(String name) {
-        return name;
     }
-
 }
