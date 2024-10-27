@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Student {
     String nim;
@@ -17,8 +18,21 @@ public class Student {
    }
 
    public void printStudentDetails() {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Masukkan Name: ");
+    name = input.nextLine();
+    System.out.print("Masukkan NIM: ");
+    nim = input.nextLine();
+    System.out.print("Masukkan Code: ");
+    String code = input.nextLine();
+    System.out.print("Masukkan Nama Course: ");
+    String course_name = input.nextLine();
+
     System.out.println("Name: " + name);
     System.out.println("NIM: " + nim);
+    System.out.println("Code: " + code);
+    System.out.println("Nama Course: " + course_name);
+
   }
 
   public ArrayList getCourses(){

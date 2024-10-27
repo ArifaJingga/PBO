@@ -1,10 +1,10 @@
 public class Course {
     String code;
-    String name;
+    String course_name;
 
-    public Course(String code, String name) {
+    public Course(String code, String course_name) {
         this.code = code;
-        this.name = name;
+        this.course_name = course_name;
     }
 
     public String update(String name) {

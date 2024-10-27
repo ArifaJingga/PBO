@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Teacher {
     String nip;
     double salary;
@@ -8,11 +10,14 @@ public class Teacher {
     }
 
     public void printTeacherDetails() {
-        // Print the name of the student
-        System.out.println("nip: " + nip);
-        
-        // Print the grade of the student
-        System.out.println("salary: " + salary);
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan nip: ");
+        nip = input.nextLine();
+        System.out.print("Masukkan salary: ");
+        double salary = input.nextDouble();
+
+        System.out.println("NIP: " + nip);
+        System.out.println("Salary: " + salary);
       }
 
     public double getSalary() {
